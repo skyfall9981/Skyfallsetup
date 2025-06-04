@@ -1,0 +1,53 @@
+
+===============================
+🌐 SkyStart AI Control - Access Sheet
+===============================
+
+📁 LOCAL FILES:
+-------------------------------
+▶ SkyCenter Launcher (Main):
+  %USERPROFILE%\Downloads\SkyCenter_Launcher.ps1
+
+▶ Companion Tool:
+  %USERPROFILE%\Downloads\SkyCompanion.ps1
+
+▶ One-Click Setup:
+  %USERPROFILE%\Downloads\SkyStart_OneClick_Deploy.ps1
+
+▶ AI GitHub Sync:
+  %USERPROFILE%\Downloads\SkyStart_GitHub_Connector.ps1
+
+▶ Installer Script (Inno Setup):
+  SkyCenter_Installer_Script.iss
+
+▶ Branded Icon + Splash:
+  SkyStart_AI_Icon.ico
+  SkyStart_Splash.png
+
+▶ Deployment Bundle:
+  SkyCenter_AI_Installer_Pack.zip
+  SkyCenter_Launchable_Bundle.zip
+
+▶ SkyWeb (coming):
+  http://localhost:8080
+  (Or setup remote tunnel for public access)
+
+💻 KEY COMMANDS:
+-------------------------------
+Run AI stack:
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\Downloads\SkyStart_OneClick_Deploy.ps1"
+
+Push to GitHub:
+cd $env:USERPROFILE\SkyStartAI
+echo "SkyStart AI Log: $(Get-Date -Format u)" >> SkyStart.log
+git add .; git commit -m "Heartbeat"; git push origin main
+
+🧠 Full Control Command Keywords:
+  - Activate SkyWeb
+  - Install SkyAgent
+  - Build SkyScheduler
+  - Launch SkyStart Dashboard
+
+Use these with ChatGPT to deploy additional AI modules.
+
+🛡️ Secured under Skyfall Command Authority.
